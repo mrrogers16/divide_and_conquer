@@ -119,7 +119,7 @@ def main():
     prices = read_stocks(filename=file_name)
 
     if len(prices) <= 1:
-        print(f"The optimal solution for {file_name} is 0")
+        print(f"One or less prices. The optimal solution for {file_name} is 0")
         return
     #
     optimal_profit = find_max_profit(prices)
