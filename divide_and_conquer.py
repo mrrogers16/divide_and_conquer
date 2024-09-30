@@ -1,3 +1,6 @@
+import sys
+
+
 def read_stocks(filename):
 
     prices = []
@@ -104,9 +107,13 @@ def max_crossing_subarray(diff, low, mid, high):
 
 
 def main():
-    # Take in file name
-    # TODO Set up command line arguments to take in file name from user
-    file_name = "nasdaq.txt"
+
+    # Check command line args
+    if len(sys.argv) != 2:
+        print("Usage: python project1.py input.txt")
+        return
+
+    file_name = sys.argv[1]
 
     # Read in stock prices from file and create array of floats
     prices = read_stocks(filename=file_name)
