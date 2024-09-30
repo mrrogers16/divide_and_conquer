@@ -1,6 +1,5 @@
 import sys
 
-
 def read_stocks(filename):
 
     prices = []
