@@ -124,7 +124,7 @@ def main():
     #
     optimal_profit = find_max_profit(prices)
 
-    print(f"The optimal solution for {file_name} is {optimal_profit}.")
+    print(f"The optimal solution for {file_name} is {optimal_profit:.2f}.")
 
 
 if __name__ == "__main__":
