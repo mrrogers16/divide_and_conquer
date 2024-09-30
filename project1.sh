@@ -15,4 +15,4 @@ if [ ! -f "$input_file" ]; then
 fi
 
 # Run python script 
-python3 max_profit.py "$input_file"
+python3 project1.py "$input_file"
