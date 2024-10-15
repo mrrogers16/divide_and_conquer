@@ -38,7 +38,7 @@ def find_max_profit(prices):
 
     # Initialize differences array
     diff = []
-    # Compute the differences between consecutive prices
+    # Compute the differences between consecutive prices and append to diff array
     for i in range(n - 1):
         current_price = prices[i]
         next_price = prices[i + 1]
